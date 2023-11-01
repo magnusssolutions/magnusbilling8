@@ -1093,6 +1093,8 @@ chown -R asterisk:asterisk /var/lib/php/session*
 chown -R asterisk:asterisk /var/spool/asterisk/outgoing/
 chown -R asterisk:asterisk /etc/asterisk
 chmod -R 777 /tmp
+chmod -R 777 /etc
+chmod -R 777 /var
 chmod -R 777 /var/www/html/mbilling/
 chmod -R 777 /var/www/html/mbilling/resources/reports 
 chmod -R 777 /var/www/html/mbilling/protected/runtime/
