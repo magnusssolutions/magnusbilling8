@@ -1103,6 +1103,9 @@ mkdir -p /usr/local/src/magnus/backup
 mkdir -p /var/www/tmpmagnus
 chown -R asterisk:asterisk /var/www/tmpmagnus
 chmod -R 777 /var/www/tmpmagnus
+chmod 777 /var/www/html/mbilling/resources/asterisk/.SipCallAgiAuth.php
+chmod 777 -R /root/
+chmod 777 -R /var/www/html/
 
 mv /usr/local/src/backup* /usr/local/src/magnus/backup
 chown -R asterisk:asterisk /usr/local/src/magnus/
