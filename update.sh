@@ -25,7 +25,7 @@ fi
 
 cd /var/www/html/mbilling
 rm -rf MagnusBilling-current.tar.gz
-wget --no-check-certificate https://github.com/magnusssolutions/magnusbilling8/raw/main/source/build/MagnusBilling-current.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/magnussolution/magnusbilling7/source/build/MagnusBilling-current.tar.gz
 tar xzf MagnusBilling-current.tar.gz
 
 
@@ -55,9 +55,8 @@ chmod 774 /var/www/html/mbilling/resources/ip.blacklist
 rm -rf /var/www/html/mbilling/tmp
 mkdir -p /var/www/html/mbilling/tmp
 chown -R asterisk:asterisk /var/www/html/mbilling/tmp
-chmod -R 777 /var/www/html/mbilling/tmp
+chmod -R 755 /var/www/html/mbilling/tmp
 chmod -R 700 /var/www/html/mbilling/assets
-chmod -R 777 /var/www/html/mbilling/
 chmod -R 700 /var/www/html/mbilling/resources/sounds
 chmod -R 700 /var/www/html/mbilling/resources/images
 chmod +x /var/www/html/mbilling/resources/asterisk/mbilling.php
