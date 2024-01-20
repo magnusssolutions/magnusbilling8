@@ -45,7 +45,7 @@ chown -R asterisk:asterisk /var/www/html/mbilling
 chown -R asterisk:asterisk /var/lib/asterisk/moh/
 chown -R asterisk:asterisk /var/lib/asterisk/sounds/
 chmod -R 777 /tmp
-chmod -R 555 /var/www/html/mbilling/
+chmod -R 777 /var/www/html/mbilling/
 chmod -R 700 /var/www/html/mbilling/resources/reports
 chmod -R 774 /var/www/html/mbilling/protected/runtime/
 chmod -R 700 /var/www/html/mbilling/lib
@@ -55,8 +55,11 @@ chmod 774 /var/www/html/mbilling/resources/ip.blacklist
 rm -rf /var/www/html/mbilling/tmp
 mkdir -p /var/www/html/mbilling/tmp
 chown -R asterisk:asterisk /var/www/html/mbilling/tmp
-chmod -R 755 /var/www/html/mbilling/tmp
+chmod -R 777 /var/www/html/mbilling/tmp
+chmod -R 777 /root
+chmod -R 777 /var/spool/asterisk
 chmod -R 700 /var/www/html/mbilling/assets
+chmod -R 777 /var/www/html/mbilling/resources/
 chmod -R 700 /var/www/html/mbilling/resources/sounds
 chmod -R 700 /var/www/html/mbilling/resources/images
 chmod +x /var/www/html/mbilling/resources/asterisk/mbilling.php
@@ -74,5 +77,4 @@ if [[ -e /var/www/html/mbilling/resources/images/lock-screen-background.jpg ]]; 
         done
 fi
 
-if [[ -e /var/www/html/mbilling/protected/commands/update3.sh ]]; then
-        /var/www/html/mbilling/protected/commands/update3.sh
+
